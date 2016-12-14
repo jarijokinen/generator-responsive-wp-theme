@@ -18,5 +18,5 @@ Responsive WordPress Theme Generator for Yeoman.
 ## License
 
 MIT License. Copyright (c) 2016 [Jari Jokinen](https://jarijokinen.com). See
-[LICENSE](https://github.com/jarijokinen/jarijokinen-fi/blob/master/LICENSE.txt)
+[LICENSE](https://github.com/jarijokinen/generator-responsive-wp-theme/blob/master/LICENSE.txt)
 for further details.
