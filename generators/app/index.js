@@ -32,7 +32,7 @@ module.exports = yeoman.Base.extend({
     }.bind(this));
   },
 
-  writing: function () {
+  writing: {
     gulpfile_js: function () {
       this.fs.copyTpl(
         this.templatePath('gulpfile.js'),
@@ -88,7 +88,7 @@ module.exports = yeoman.Base.extend({
       );
     },
     
-    404_php: function () {
+    notfound_php: function () {
       this.fs.copyTpl(
         this.templatePath('src/php/404.php'),
         this.destinationPath('src/php/404.php'),
