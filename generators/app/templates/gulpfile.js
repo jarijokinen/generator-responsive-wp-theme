@@ -36,7 +36,7 @@ const options = {
   },
   scss: { 
     dest: 'dist',
-    file: 'styles.css',
+    file: 'style.css',
     outputStyle: 'compressed',
     src: [
       'src/scss/*.scss'
