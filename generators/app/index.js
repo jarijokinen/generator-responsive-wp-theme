@@ -112,6 +112,6 @@ module.exports = yeoman.Base.extend({
       'gulp-sass',
       'gulp-uglify'
     ];
-    this.yarnInstall(packages, { 'dev': true });
+    this.npmInstall(packages, { 'saveDev': true });
   }
 });
