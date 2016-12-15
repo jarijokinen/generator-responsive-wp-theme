@@ -47,6 +47,22 @@ module.exports = yeoman.Base.extend({
         this.destinationPath('.gitignore')
       );
     },
+    
+    main_scss: function () {
+      this.fs.copyTpl(
+        this.templatePath('src/scss/main.scss'),
+        this.destinationPath('src/scss/main.scss'),
+        this.answers
+      );
+    },
+    
+    main_js: function () {
+      this.fs.copyTpl(
+        this.templatePath('src/js/main.js'),
+        this.destinationPath('src/js/main.js'),
+        this.answers
+      );
+    },
 
     functions_php: function () {
       this.fs.copyTpl(
