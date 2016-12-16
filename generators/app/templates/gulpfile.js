@@ -26,6 +26,7 @@ const options = {
     dest: 'dist/js',
     file: '<%= theme_slug %>.js',
     src: [
+      'node_modules/responsive_boilerplate/src/js/*.js',
       'src/js/*.js'
     ]
   },
@@ -40,6 +41,11 @@ const options = {
     file: 'style.css',
     outputStyle: 'compressed',
     src: [
+      'node_modules/responsive_boilerplate/src/scss/base.scss',
+      'node_modules/responsive_boilerplate/src/scss/container.scss',
+      'node_modules/responsive_boilerplate/src/scss/grid.scss',
+      'node_modules/responsive_boilerplate/src/scss/header.scss',
+      'node_modules/responsive_boilerplate/src/scss/sections.scss',
       'src/scss/*.scss'
     ]
   }
@@ -77,9 +83,9 @@ gulp.task('scss', function () {
   return gulp.src(options.scss.src)
     .pipe(plugins.sass(options.scss))
     .pipe(plugins.autoprefixer(options.autoprefixer))
+    .pipe(plugins.concat(options.scss.file))
     .pipe(plugins.cssnano(options.cssnano))
     .pipe(plugins.header(options.header.banner))
-    .pipe(plugins.rename(options.scss.file))
     .pipe(gulp.dest(options.scss.dest))
     .pipe(browsersync.stream());
 });

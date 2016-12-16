@@ -125,9 +125,9 @@ module.exports = yeoman.Base.extend({
       'gulp-header',
       'gulp-imagemin',
       'gulp-load-plugins',
-      'gulp-rename',
       'gulp-sass',
-      'gulp-uglify'
+      'gulp-uglify',
+      'https://github.com/jarijokinen/responsive-boilerplate.git'
     ];
     this.npmInstall(packages, { 'saveDev': true });
   }
