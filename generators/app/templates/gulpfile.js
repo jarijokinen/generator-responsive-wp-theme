@@ -26,7 +26,7 @@ const options = {
     dest: 'dist/js',
     file: '<%= theme_slug %>.js',
     src: [
-      'node_modules/responsive_boilerplate/src/js/*.js',
+      'node_modules/responsive-boilerplate/src/js/*.js',
       'src/js/*.js'
     ]
   },
@@ -41,11 +41,11 @@ const options = {
     file: 'style.css',
     outputStyle: 'compressed',
     src: [
-      'node_modules/responsive_boilerplate/src/scss/base.scss',
-      'node_modules/responsive_boilerplate/src/scss/container.scss',
-      'node_modules/responsive_boilerplate/src/scss/grid.scss',
-      'node_modules/responsive_boilerplate/src/scss/header.scss',
-      'node_modules/responsive_boilerplate/src/scss/sections.scss',
+      'node_modules/responsive-boilerplate/src/scss/base.scss',
+      'node_modules/responsive-boilerplate/src/scss/container.scss',
+      'node_modules/responsive-boilerplate/src/scss/grid.scss',
+      'node_modules/responsive-boilerplate/src/scss/header.scss',
+      'node_modules/responsive-boilerplate/src/scss/sections.scss',
       'src/scss/*.scss'
     ]
   }
