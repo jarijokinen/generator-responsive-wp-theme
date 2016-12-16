@@ -18,6 +18,26 @@ function custom_document_title_parts($title) {
 }
 add_filter('document_title_parts', 'custom_document_title_parts');
 
+function custom_nav_menu_css_class($classes) {
+  $new_classes = [];
+  if (in_array('current-menu-item', $classes)) {
+    $new_classes[] = '';
+  }
+  return $new_classes;
+}
+add_filter('nav_menu_css_class', 'custom_nav_menu_css_class');
+
+function custom_nav_menu_link_attributes($atts) {
+  $atts['class'] = false;
+  return $atts;
+}
+add_filter('nav_menu_link_attributes', 'custom_nav_menu_link_attributes');
+
+function custom_nav_menu_item_id() {
+  return false;
+}
+add_filter('nav_menu_item_id', 'custom_nav_menu_item_id');
+
 function theme_after_setup_theme() {
   show_admin_bar(false);
   add_theme_support('title-tag');
