@@ -121,6 +121,7 @@ module.exports = yeoman.Base.extend({
       'gulp-autoprefixer',
       'gulp-babel',
       'gulp-concat',
+      'gulp-cssnano',
       'gulp-header',
       'gulp-imagemin',
       'gulp-load-plugins',

@@ -8,6 +8,7 @@ const options = {
   autoprefixer: { browsers: ['last 3 versions'] },
   babel: { presets: ['latest'] },
   browsersync: { proxy: 'localhost:8080' },
+  cssnano: {},
   fonts: {
     dest: 'dist/fonts',
     src: [
@@ -76,6 +77,7 @@ gulp.task('scss', function () {
   return gulp.src(options.scss.src)
     .pipe(plugins.sass(options.scss))
     .pipe(plugins.autoprefixer(options.autoprefixer))
+    .pipe(plugins.cssnano(options.cssnano))
     .pipe(plugins.header(options.header.banner))
     .pipe(plugins.rename(options.scss.file))
     .pipe(gulp.dest(options.scss.dest))
