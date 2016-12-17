@@ -42,6 +42,7 @@ const options = {
     outputStyle: 'compressed',
     src: [
       'node_modules/responsive-boilerplate/src/scss/base.scss',
+      'node_modules/responsive-boilerplate/src/scss/buttons.scss',
       'node_modules/responsive-boilerplate/src/scss/container.scss',
       'node_modules/responsive-boilerplate/src/scss/grid.scss',
       'node_modules/responsive-boilerplate/src/scss/header.scss',
